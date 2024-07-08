@@ -229,7 +229,7 @@
 		}
 
 		if (qrCodeGenerationError) {
-			dispatch('qrCodeGenerationFailed');
+			dispatch('qrCodeGenerationFailed', qrCodeGenerationError);
 		}
 
 		qrCodeIsVisible = true;
